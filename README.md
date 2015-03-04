@@ -1,7 +1,7 @@
 Coffee Cake
 ============
 
-This project is a demonstration of the Cake pattern (more commonly seen in Scala).  It relies on Java 8 features: specifically default functions on interfaces which allow for the "mixin" behavior.
+This project is a demonstration of the [Cake pattern](http://www.cakesolutions.net/teamblogs/2011/12/19/cake-pattern-in-depth) in Java.  It relies on Java 8 features: specifically default functions on interfaces which allow for the "mixin" behavior.
 
 This is interoperable with other dependency injection mechanisms like Spring, but there is a lot of power in moving much of the configuration into code.  I also believe there is a significant advantage in the pattern for "default" or standard implementations, because it's possible to inject them without wiring.
 
