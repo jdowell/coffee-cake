@@ -4,7 +4,9 @@ import com.jacksondowell.client.impl.MyCoffeeClient;
 import com.jacksondowell.controllers.CoffeeStatsController;
 import com.jacksondowell.controllers.DefaultCoffeeStatsController;
 
-
+/**
+ * A toy example that exercises both controllers
+ */
 public class Main {
 
     public static void main(String[] args) {

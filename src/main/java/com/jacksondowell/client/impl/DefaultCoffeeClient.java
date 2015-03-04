@@ -5,7 +5,9 @@ import com.jacksondowell.client.DBClient;
 import com.jacksondowell.models.Coffee;
 import java.util.List;
 
-
+/**
+ * An implementation of CoffeeClient that uses the default DBClient
+ */
 public class DefaultCoffeeClient implements CoffeeClient {
 
   private final DBClient _dbClient;
@@ -23,6 +25,7 @@ public class DefaultCoffeeClient implements CoffeeClient {
   public static interface Component extends CoffeeClient.Component, DBClientImpl.DefaultComponent {
 
     default CoffeeClient coffeeClient() {
+      // use the DefaultComponent to get a DBClient
       return new DefaultCoffeeClient(dbClient());
     }
   }
